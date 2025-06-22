@@ -197,6 +197,11 @@
             align-items: center;
         }
 
+                .about-text {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
         @media (max-width: 768px) {
         .about-content {
             grid-template-columns: 1fr;
@@ -222,6 +227,20 @@
             align-items: center;
             justify-content: center;
             margin: 0 auto;
+        }
+
+        .profile-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-name {
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e3a5f;
         }
 
         @media (max-width: 768px) {
@@ -543,7 +562,7 @@
             align-items: center;
             justify-content: center;
             margin: 0 20px;
-            background: white;
+            background: #2596be;
             border-radius: 10px;
             box-shadow: 0 3px 15px rgba(0,0,0,0.1);
             border: 2px solid #e9ecef;
@@ -583,6 +602,10 @@
             transition: all 0.3s ease;
             position: relative;
             z-index: 1;
+        }
+
+        .partner-logo-img {
+            filter: brightness(0.9) contrast(1.1) drop-shadow(0 0 2px rgba(0,0,0,0.2));
         }
 
 
@@ -711,9 +734,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="hamburger" id="hamburger">&#9776;</div>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
                     <li><a href="#partners">Partners</a></li>
-                    <li><a href="#documents">Documents</a></li>
+                    <li><a href="#why">What I Offer</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -728,9 +750,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <section id="about" class="section">
                 <h2>Get To Know Your Mortgage Professional</h2>
                 <div class="about-content">
-                    <div class="profile-image">
-                        
-                    </div>
+                <div class="profile-wrapper">
+                <div class="profile-image"></div>
+                <span class="profile-name">Anthony Dickinson</span>
+                </div>
                     <div class="about-text">
                         <p>I’ve been providing trusted mortgage advice for nearly 30 years. I began my career as a personal
 banker with a major bank, then spent 24 years as a mortgage specialist with a financial planning
@@ -748,38 +771,6 @@ important to review your options and structure financing to match your needs and
 mortgage to save money, I’m here to guide you through the process. With access to a wide
 network of lending partners, I can offer competitive rates and flexible solutions.</p><br>
                         <p>Let’s connect—I’d love to help you find the right mortgage.</p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Experience Section -->
-            <section id="experience" class="section">
-                <h2>Experienced & Professional</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-year">2020 - Present</div>
-                        <h3>Senior Mortgage Broker</h3>
-                        <p>Leading mortgage professional helping families and individuals secure optimal home financing solutions. Specializing in first-time homebuyer programs, refinancing, and investment property loans.</p>
-                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
-                            <li>Successfully closed over 500 mortgage transactions</li>
-                            <li>Maintained 98% client satisfaction rating</li>
-                            <li>Expertise in conventional, FHA, VA, and USDA loans</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2017 - 2020</div>
-                        <h3>Mortgage Loan Officer</h3>
-                        <p>Developed expertise in loan origination, underwriting guidelines, and client relationship management while working with diverse lending institutions.</p>
-                        <ul style="margin-top: 1rem; padding-left: 1.5rem;">
-                            <li>Processed $50M+ in loan volume annually</li>
-                            <li>Specialized in complex financing scenarios</li>
-                            <li>Built strong referral network with real estate professionals</li>
-                        </ul>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2015 - 2017</div>
-                        <h3>Mortgage Processing Specialist</h3>
-                        <p>Gained comprehensive understanding of mortgage operations, documentation requirements, and regulatory compliance in the residential lending industry.</p>
                     </div>
                 </div>
             </section>
@@ -831,48 +822,25 @@ network of lending partners, I can offer competitive rates and flexible solution
                 </div>
             </section>
 
-            <!-- Sample Documents Section -->
-            <section id="documents" class="section">
-                <h2>Mortgage Resources</h2>
-                <p style="text-align: center; margin-bottom: 2rem;">Here you can download sample documents and helpful resources to better understand the mortgage process.</p>
-                <div class="documents-grid">
-                    <div class="document-card">
-                        <div class="document-icon">📋</div>
-                        <h3>Loan Application Checklist</h3>
-                        <p>Complete checklist of documents needed for your mortgage application.</p>
-                        <a href="#" class="download-link">Download PDF</a>
-                    </div>
-                    <div class="document-card">
-                        <div class="document-icon">📊</div>
-                        <h3>Pre-Approval Letter Sample</h3>
-                        <p>Example of what a pre-approval letter looks like and what it includes.</p>
-                        <a href="#" class="download-link">Download PDF</a>
-                    </div>
-                    <div class="document-card">
-                        <div class="document-icon">🏠</div>
-                        <h3>First-Time Buyer Guide</h3>
-                        <p>Comprehensive guide for first-time homebuyers navigating the process.</p>
-                        <a href="#" class="download-link">Download PDF</a>
-                    </div>
-                    <div class="document-card">
-                        <div class="document-icon">💰</div>
-                        <h3>Closing Cost Breakdown</h3>
-                        <p>Detailed explanation of typical closing costs and what to expect.</p>
-                        <a href="#" class="download-link">Download PDF</a>
-                    </div>
-                    <div class="document-card">
-                        <div class="document-icon">📈</div>
-                        <h3>Rate Sheet Examples</h3>
-                        <p>Sample rate sheets showing how mortgage rates are presented.</p>
-                        <a href="#" class="download-link">Download PDF</a>
-                    </div>
-                    <div class="document-card">
-                        <div class="document-icon">🔍</div>
-                        <h3>Loan Comparison Tool</h3>
-                        <p>Interactive worksheet to compare different loan options side-by-side.</p>
-                        <a href="#" class="download-link">Download Excel</a>
-                    </div>
+            <!-- Why Work With Me -->
+            <section id="why" class="section">
+            <h2>Why Work With Me?</h2>
+            <div class="credentials-grid">
+                <div class="credential-card">
+                <h3> Tailored Guidance<br>🤝</h3>
+                <p>I simplify complex options and help you choose what’s right for your situation.</p>
                 </div>
+                <div class="credential-card">
+                <h3> Top Lending Access<br>🏦</h3>
+                <p>Access to multiple lenders to get competitive rates that fit your needs.</p>
+                </div>
+                <div class="credential-card">
+                <h3> Support at Every Step
+                    <br>📞
+                </h3>
+                <p>From application to closing, I’m available to guide you and answer any questions.</p>
+                </div>
+            </div>
             </section>
 
             <!-- Contact Section -->
